@@ -14,7 +14,7 @@ import br.edu.utfpr.dv.siacoes.model.Jury;
 import br.edu.utfpr.dv.siacoes.model.JuryAppraiserRequest;
 import br.edu.utfpr.dv.siacoes.model.JuryRequest;
 
-public class JuryRequestDAO {
+public class JuryRequestDAO implements JuryIF{
 	
 	public JuryRequest findById(int id) throws SQLException{
 		Connection conn = null;

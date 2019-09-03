@@ -18,8 +18,8 @@ import br.edu.utfpr.dv.siacoes.model.JuryBySemester;
 import br.edu.utfpr.dv.siacoes.model.JuryStudent;
 import br.edu.utfpr.dv.siacoes.model.JuryStudentReport;
 
-public class JuryDAO {
-	
+public class JuryDAO implements JuryIF {
+
 	public Jury findById(int id) throws SQLException{
 		Connection conn = null;
 		PreparedStatement stmt = null;
@@ -661,5 +661,5 @@ public class JuryDAO {
 				conn.close();
 		}
 	}
-	
+
 }
